@@ -3,6 +3,12 @@
     "version": "0.2",
     "description": "Chrome extension that replaces 'SUP QT' with something more appropriate",
     "manifest_version": 2,
+    "icons": [
+        {
+            "48": "icon48.png",
+            "128": "icon128.png" 
+        }  
+    ],
     "browser_action": {
         "default_icon": "icon.png",
         "default_title": "It's the Last Supper!"
@@ -17,4 +23,5 @@
     ],
     "permissions": [ "tabs", "http://*/*" ],
     "background": { "scripts": [ "lastsupper.js" ] }
+    
 }
